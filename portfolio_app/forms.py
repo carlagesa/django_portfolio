@@ -1,4 +1,4 @@
-from django import forms 
+from django import forms
 from portfolio_app.models import Contact
 from django.core import validators
 

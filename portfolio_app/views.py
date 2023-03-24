@@ -4,6 +4,7 @@ from . import forms
 from portfolio_app.forms import NewContact
 # Create your views here.
 
+
 def index(request):
     index = NewContact()
 
@@ -15,8 +16,8 @@ def index(request):
             # return index(request)
         else:
             print('ERROR FORM INVALID')
-    return render(request, 'portfolio_app/index.html', {'form':index})
-    
+    return render(request, 'portfolio_app/index.html', {'form': index})
+
 
 def access(request):
     work_list = PreviousWork.objects.all()
