@@ -16,7 +16,7 @@ def index(request):
             # return index(request)
         else:
             print('ERROR FORM INVALID')
-    return render(request, 'portfolio_app/index.html', {'form': index})
+    return render(request, 'portfolio/index.html', {'form': index})
 
 
 def access(request):
